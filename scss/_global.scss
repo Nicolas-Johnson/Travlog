@@ -1,4 +1,6 @@
 :root {
+
+    --c-white: #FFFFFF;
     --c-black: rgba(25, 24, 37, 100%);
     --c-black-75: rgba(25, 24, 37, 75%);
     --c-black-50: rgba(25, 24, 37, 50%);
@@ -11,6 +13,84 @@
     --c-orange: #ff5722;
     --c-blue: #0061ff;
     --c-aqua: #60efff;
+    --c-pink: #E81CFF;
 
-    
+    --f-sm-11: 0.688rem;
+    --f-sm-13: 0.813rem;
+    --f-sm-14: 0.875rem;
+    --f-sm-16: 1rem;
+    --f-m-18: 1.125rem;
+    --f-m-20: 1.25rem;
+    --f-m-23: 1.438rem;
+    --f-l-26: 1.625rem;
+    --f-l-29: 1.813rem;
+    --f-xl-32: 2rem;
 }
+
+// Boilerplate stayless
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    line-height: 1;
+    font-size: var(--f-m-18);
+    color: var(--c-black-50);
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--c-black);
+    line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: 150ms ease-in-out;
+    transition-property: color, background-color;
+    color: inherit;
+    font-weight: 700;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.wrapper {
+    width: min(69.375rem, calc(100% - 2rem));
+    margin-inline: auto; 
+}
+

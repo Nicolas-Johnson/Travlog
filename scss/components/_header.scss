@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+
+    &__logo {
+        width: 8.875rem;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 4rem;
+        
+        li {
+            a {
+                cursor: pointer;
+                
+                &:hover {
+                    color: var(--c-black);
+                    border-bottom: 2px solid var(--c-black);
+                }
+
+                &:active {
+                    color: var(--c-black);
+                }
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 16px;
+        color: var(--c-black);
+        align-items: center;
+
+        .header__buttons-login {
+            cursor: pointer;
+            
+            &:hover {
+                color: var(--c-black);
+                border-bottom: 2px solid var(--c-black);
+            }
+
+            &:active {
+                color: var(--c-black);
+            }
+        }
+
+        button {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            background: #5D50C6;
+            color: var(--c-white);
+            outline: none;
+            border: none;
+            font-size: inherit;
+            font-weight: 700;
+            cursor: pointer;
+
+            &:hover {
+                background: var(--c-pink);
+            }
+
+        }
+    }
+}
