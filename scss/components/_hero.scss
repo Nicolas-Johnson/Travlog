@@ -1,0 +1,174 @@
+.hero {
+    display: flex;
+    margin-block-start: 4rem;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 2.688rem;
+        max-width: 26.688rem;
+        justify-content: center;
+
+        .info__cta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--c-white);
+            border: 1px solid pink;
+            border-radius: 2rem;
+            padding: 0.594rem 2rem;
+            max-width: fit-content;
+            color: #F85E9F; 
+            font-size: var(--f-sm-14);
+        }
+
+        .info__title {
+            font-size: 4.313rem;
+            font-weight: 700;
+
+            span {
+                color: #F85E9F;
+            }
+        }
+
+        .info__description {
+            font-size: var(--f-m-18);
+            padding: 0;
+        }
+
+        .info__buttons {
+            display: flex; 
+            gap: 1rem;
+            font-size: var(--f-sm-14);
+
+            .buttons__get {
+                padding: 1rem 2rem;
+                border-radius: 2rem;
+                background: #5D50C6;
+                color: var(--c-white);
+                outline: none;
+                border: none;
+                font-size: inherit;
+                font-weight: 700;
+                cursor: pointer;  
+                align-self: center; 
+                box-shadow: 0rem 1.25rem 1.25rem var(--c-black-25);
+
+                &:hover {
+                    background: var(--c-pink);
+                }        
+            }
+
+            .buttons__play {
+                display: flex;
+                align-items: center;
+                padding: 0.594rem 2rem;
+                border-radius: 2rem;
+                color: var(--c-black);
+                outline: none;
+                border: 1px solid var(--c-black-10);
+                font-size: inherit;
+                font-weight: 700;
+                cursor: pointer; 
+            }
+        }
+
+        img {
+            width: 1.5rem;
+        }
+    }
+
+    &__images {
+        min-width: 48.25rem;
+        background-image: url(./public/img/hero-overlay-bg.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        padding-inline-start: 5.75rem;
+        padding-block-start: 5rem;
+        position: relative;
+
+        .images__cta {
+            position: absolute;
+            right: 0;
+            bottom: 200px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--c-white);
+            // border: 1px solid pink;
+            border-radius: 2rem;
+            padding: 0.594rem 2rem;
+            max-width: fit-content;
+            color: var(--c-black); 
+            font-size: var(--f-sm-14);
+            box-shadow: 0rem 1.25rem 1.25rem var(--c-black-25);
+
+            img {
+                width: 1.5rem;
+            }
+            
+
+        }
+
+        .images__grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(1, 17rem);
+            position: relative;
+
+            img {
+                max-width: 17rem;
+                max-height: 25rem;
+            }
+
+            .img__big {
+                position: absolute;
+                left: 19rem;
+                align-self: center;
+            }
+        }
+
+        .images__send {
+            position: absolute;
+            left: 50px;
+            bottom: 300px;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F85E9F;
+            box-shadow: 0rem 1.25rem 1.25rem var(--c-black-25);
+            z-index: 10;
+
+
+
+            img {
+                width: 26px;
+            }
+        }
+
+        .images__peopple {
+            position: absolute;
+            bottom: 0;
+            left: 500px;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FF5722;
+            box-shadow: 0rem 1.25rem 1.25rem var(--c-black-25);
+            z-index: 10;
+
+
+
+            img {
+                width: 26px;
+            }
+        }
+        
+    }
+}
