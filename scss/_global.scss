@@ -94,3 +94,31 @@ img {
     margin-inline: auto; 
 }
 
+.bg-overlay-color-orange {
+    width: 31.25rem;
+    height: 31.25rem;
+    background-color: var(--c-orange);
+    border-radius: 50%;
+
+    -webkit-filter: blur(12.5rem);
+
+    position: absolute;
+    top: -25rem;
+    left: -12.5rem;
+    z-index: -5;
+}
+
+.bg-overlay-color-yellow {
+    width: 31.25rem;
+    height: 31.25rem;
+    background-color: var(--c-yellow);
+    border-radius: 50%;
+
+    -webkit-filter: blur(12.5rem);
+
+    position: absolute;
+    top: 50rem;
+    right: -25rem;
+    z-index: -5;
+}
+
