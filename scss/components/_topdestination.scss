@@ -1,0 +1,111 @@
+.top-destination {
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-block: 4rem;
+
+        .header__titles {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .header__subtitle {
+                font-size: var(--f-m-23);
+                font-weight: 700;
+                text-transform: uppercase;
+                color: var(--c-pink02);
+            }
+
+            .header__title {
+                font-size: var(--f-xl-44);
+                font-weight: 700;
+            }
+
+        }
+
+        .header__navigation {
+            display: flex;
+            gap: 2rem;
+
+            .navigation__btn {
+                border: 1px solid var(--c-black-10);
+                width: 6.25rem;
+                height: 6.25rem;
+                border-radius: 50%;
+                color: black;
+                text-align: center;
+                padding-block-start: 2.5rem;
+
+                &:hover {
+                    border: none;
+                    color: white;
+                    font-weight: 700;
+                    background: var(--c-purpl);
+                    box-shadow: 0rem 4rem 2.5rem var(--c-black-25);
+                    
+                }
+            }
+
+        }
+    }
+
+    &__carrosel {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(21.875rem, 1fr));
+        gap: 2rem;
+
+        .carrosel__card {
+            border-radius: 20px;
+            box-shadow: 0rem 1.25rem 1.25rem var(--c-black-25);
+
+
+            img {
+                width: 100%;
+                height: 21.875rem;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            .card__info {
+                display: flex;
+                padding: 2rem;
+
+                .card__info-titles {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    .title {
+                        font-size: var(--f-m-23);
+                    }
+
+                    .description {
+                        font-size: var(--f-m-18);
+                        color: var(--c-black-75);
+                    }
+
+                    .rating {
+                        display: flex;
+
+                        color: var(--c-orange);
+                        font-weight: 700;
+                        font-size: var(--f-m-23);
+
+                        img {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                        }
+                    }
+                }
+                .card__info-price {
+                    h3 {
+                        color: var(--c-pink02);
+                    }
+                }
+            }
+
+        }
+
+    }
+}
