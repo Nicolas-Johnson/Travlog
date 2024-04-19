@@ -6,7 +6,7 @@
     --c-black-50: rgba(25, 24, 37, 50%);
     --c-black-25: rgba(25, 24, 37, 25%);
     --c-black-10: rgba(25, 24, 37, 10%);
-    --c-black-05: rbga(25, 24, 37, 5%);
+    --c-black-05: rgba(25, 24, 37, 5%);
     --c-blue-gradient: linear-gradient(to bottom right,#0061FF, #60efff);
     --c-blue-to-pink-gradient: linear-gradient(to right,#40C9FF, #E81CFF);
     --c-yellow: #facd49;
@@ -14,6 +14,7 @@
     --c-blue: #0061ff;
     --c-aqua: #60efff;
     --c-pink: #E81CFF;
+    --c-pink02: #F85E9F;
 
     --f-sm-11: 0.688rem;
     --f-sm-13: 0.813rem;
@@ -25,6 +26,7 @@
     --f-l-26: 1.625rem;
     --f-l-29: 1.813rem;
     --f-xl-32: 2rem;
+    --f-xl-44: 2.75rem;
 }
 
 // Boilerplate stayless
@@ -48,7 +50,7 @@ body {
     line-height: 1;
     font-size: var(--f-m-18);
     color: var(--c-black-50);
-    // overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 h1,
@@ -118,7 +120,7 @@ img {
 
     position: absolute;
     top: 50rem;
-    right: -25rem;
+    right: -20rem;
     z-index: -5;
 }
 
