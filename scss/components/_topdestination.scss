@@ -54,6 +54,7 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(21.875rem, 1fr));
         gap: 2rem;
+        padding-block-end: 8.125rem;
 
         .carrosel__card {
             border-radius: 20px;
