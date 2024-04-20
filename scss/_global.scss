@@ -126,3 +126,22 @@ img {
     z-index: -5;
 }
 
+.navigation__btn {
+    background-color: white;
+    border: 1px solid var(--c-black-10);
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    padding-block-start: 2.5rem;
+
+    &:hover {
+        border: none;
+        color: white;
+        font-weight: 700;
+        background: var(--c-purpl);
+        box-shadow: 0rem 4rem 2.5rem var(--c-black-25);
+        
+    }
+}
